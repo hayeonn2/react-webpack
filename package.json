@@ -8,7 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack:config": "webpack --target=browserslist --entry=./src/main.js --output-path=public",
-    "webpack:dev": "npm run webpack:config -- --mode=development"
+    "webpack:dev": "npm run webpack:config -- --mode=development",
+    "webpack:prod": "npm run webpack:config -- --mode=production"
   },
   "keywords": [
     "react",
