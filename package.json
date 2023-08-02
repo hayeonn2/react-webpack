@@ -9,7 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack:config": "webpack --target=browserslist --entry=./src/main.js --output-path=public",
     "webpack:dev": "npm run webpack:config -- --mode=development",
-    "webpack:prod": "npm run webpack:config -- --mode=production"
+    "webpack:prod": "npm run webpack:config -- --mode=production",
+    "bundle": "webpack bundle -c webpack/dev.js",
+    "build": "webpack build --progress -c webpack/prod.js"
   },
   "keywords": [
     "react",
