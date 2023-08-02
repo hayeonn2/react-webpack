@@ -10,7 +10,7 @@
     "webpack:config": "webpack --target=browserslist --entry=./src/main.js --output-path=public",
     "webpack:dev": "npm run webpack:config -- --mode=development",
     "webpack:prod": "npm run webpack:config -- --mode=production",
-    "bundle": "webpack bundle -c webpack/dev.js",
+    "bundle": "cross-env BROWSERSLIST_CONFIG=config/.browserslistrc webpack -c config/webpack/config.js",
     "build": "webpack build --progress -c webpack/prod.js"
   },
   "keywords": [
@@ -34,5 +34,8 @@
   "devDependencies": {
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }
