@@ -1,4 +1,4 @@
-import { styleLog, test, currency, numberWithComma } from "./utils/index.js";
+import { styleLog, currency, numberWithComma } from "./utils/index.js";
 
 styleLog(
   "안녕! 웹팩 😃",
