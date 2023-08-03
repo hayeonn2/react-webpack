@@ -11,7 +11,10 @@
     "webpack:dev": "npm run webpack:config -- --mode=development",
     "webpack:prod": "npm run webpack:config -- --mode=production",
     "bundle": "cross-env BROWSERSLIST_CONFIG=config/.browserslistrc webpack -c config/webpack/config.js",
-    "build": "webpack build --progress -c webpack/prod.js"
+    "build": "webpack build --progress -c webpack/prod.js",
+    "start": "npm run server -- --open",
+    "dev": "npm run server",
+    "server": "webpack server -c webpack/dev.js"
   },
   "keywords": [
     "react",
